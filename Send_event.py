@@ -14,8 +14,8 @@ def publish_to_sns_topic(topic_arn, message, subject=None):
     """
     # Create an SNS client
 
-    access_key= "AKIA374KKJCLQHYITJGI"
-    secret_key= "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"
+    access_key= secret
+    secret_key= key
     sns_client = boto3.client('sns', region_name='us-east-2', 
                               aws_access_key_id=access_key, 
                               aws_secret_access_key=secret_key)
